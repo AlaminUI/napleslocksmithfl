@@ -6,3 +6,16 @@ document.addEventListener("scroll", function () {
     }
     })
     
+
+    document.querySelector('.humberger i').addEventListener('click',function(){
+        document.querySelector('.navagation-items').classList.add('show-menu')
+    })
+    document.querySelector('.mobile-close button').addEventListener('click',function(){
+        document.querySelector('.navagation-items').classList.add('hide-menu')
+        document.querySelector('.navagation-items').classList.remove('show-menu')
+    })
+    document.querySelector('.submenu-item').addEventListener('click',function(){
+        this.classList.toggle('icon-spning')
+        document.querySelector('.sub-menu').classList.toggle('submenu-show')
+        // document.querySelector('.navagation-items').classList.remove('show-menu')
+    })

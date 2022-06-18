@@ -16,6 +16,7 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   
 }
 
 
@@ -287,7 +288,15 @@ header.sticky-header .contact-button ul li a:hover {
   background: transparent;
   color: #fff;
 }
-
+.mobile-close{
+  display:none;
+}
+.mobile-big-btn {
+  display: none;
+}
+li.mobile-show-icon {
+  display: none;
+}
 /* banner area   */
 .banner-area {
     position: relative;
@@ -746,12 +755,12 @@ footer {
   padding-top: 12px;
 }
 img.locationicon {
-    max-width: 20px;
-    margin-bottom: 17px;
+    max-width: 17px;
+    margin-bottom: 18px;
 }
 
 img.phoneicon {
-    max-width: 22px;
-    margin-bottom: 21px;
+    max-width: 36px;
+    margin-bottom: 8px;
 }
 /************** Template CSS End **************/
