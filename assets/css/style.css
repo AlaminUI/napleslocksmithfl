@@ -66,7 +66,7 @@ h6 {
   font-weight: 700;
   font-style: normal;
   margin-top: 0px;
-  margin-bottom:0px;
+ 
   line-height: 1.3;
 }
 
@@ -97,7 +97,7 @@ h6 {
 
 p {
   font-size: 16px;
-  margin: 0;
+   
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -474,9 +474,9 @@ a.contact-button:hover {
     width: 100%;
     height: 100%;
 }
-li.mobile-hide {
+/* li.mobile-hide {
   margin-right: 32px;
-}
+} */
 .content-box {
     background: #f4f4f4!important;
     padding: 45px;
