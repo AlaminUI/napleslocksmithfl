@@ -19,3 +19,5 @@ document.addEventListener("scroll", function () {
         document.querySelector('.sub-menu').classList.toggle('submenu-show')
         // document.querySelector('.navagation-items').classList.remove('show-menu')
     })
+
+    AOS.init();

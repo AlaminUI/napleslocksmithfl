@@ -8,7 +8,8 @@
 
 
   <!-- Site Title -->
-  <title>title_text</title>
+  <title>Residential &amp; Commercial Locksmith | Naples, FL | Naples Locksmith</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
   <!-- Favicon -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- All CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+  <link href="assets/css/aos.css" rel="stylesheet">
+  <link href="assets/css/slick.css" rel="stylesheet" />
+  <link href="assets/css/slick.theme.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/all.min.css">
   <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -59,7 +61,7 @@
             <li><a href="contact.html">Contact </a></li>
           </ul>
           <div class="mobile-big-btn">
-            <a href="" class="custom-btn">CALL/TEXT NOW</a>
+            <a href="contact.html" class="custom-btn">CALL/TEXT NOW</a>
           </div>
         </nav>
 
@@ -100,7 +102,7 @@
           <h1>We Solve the Problem Simply
           </h1>
           <h2>HIRE YOUR TRUSTED COMMERCIAL LOCKSMITH IN NAPLES, FL          </h2>
-          <a href="" class="contact-button">CONTACT US TODAY </a>
+          <a href="contact.html" class="contact-button">CONTACT US TODAY </a>
         </div>
       </div>
     </div>
@@ -112,7 +114,7 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <div class="content-box">
+        <div class="content-box" data-aos="fade-left">
           <h2>There's No Need to Break Into Your Home
           </h2>
           <h4>YOUR RESIDENTIAL LOCKSMITH CAN OPEN THE DOOR IN NAPLES, FL
@@ -145,7 +147,7 @@
         <div class="left-service">
           <!-- service item  -->
           <div class="single-service">
-            <a href="">
+            <a href="new-construction-lock-installation.html">
               <img src="assets/img/service-1.webp" alt="service 1">
               <h3>New Construction Lock Installation              </h3>
             </a>
@@ -155,7 +157,7 @@
           <div class="right-two-service">
             <!-- service item  -->
             <div class="single-service">
-              <a href="">
+              <a href="house-lockouts.html">
                 <img src="assets/img/service-2.webp" alt="service 2">
                 <h3>House Lockouts                </h3>
               </a>
@@ -163,7 +165,7 @@
 
              <!-- service item  -->
              <div class="single-service">
-              <a href="">
+              <a href="car-lockouts.html">
                 <img src="assets/img/service-3.webp" alt="service 3">
                 <h3>Car Lockouts                </h3>
               </a>
@@ -172,7 +174,7 @@
           </div>
            <!-- service item  -->
            <div class="single-service">
-            <a href="">
+            <a href="car-key-replacement.html">
               <img src="assets/img/service-4.webp" alt="service 4">
               <h3>Car Key Replacement              </h3>
             </a>
@@ -189,7 +191,7 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <div class="content-box">
+        <div class="content-box" data-aos="fade-left">
           <h2>Do you know how locksmiths open doors?
           </h2>
       
@@ -218,7 +220,7 @@
       <h2>Locked Out? Don't Damage Your Home or Car Trying to Get In  </h2>
       <h3>CHOOSE AN EXPERIENCED RESIDENTIAL LOCKSMITH
       </h3>
-      <a href="" class="custom-btn">CONTACT US </a>
+      <a href="contact.html" class="custom-btn">CONTACT US </a>
     </div>
   </div>
 </section>
@@ -229,7 +231,7 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <div class="content-box">
+        <div class="content-box" data-aos="fade-left">
           <h2>There's No Lock We Can't Handle!
           </h2>
       
@@ -344,53 +346,54 @@
 
   <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
   <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/aos.js"></script>
   <script src="assets/js/main.js"></script>
 
   <script>
-    	//banner slider
-	$(".bannerSlider").slick({
-	    dots: false
-	    , autoplay: true
-	    , infinite: true
-	    , dots: false
-	    , slidesToShow: 1
-	    , slideswToScroll: 1
-	    , arrows: false,
-      speed: 2500,
-      fade: true,
-  cssEase: 'linear'
+    //banner slider
+$(".bannerSlider").slick({
+    dots: false
+    , autoplay: true
+    , infinite: true
+    , dots: false
+    , slidesToShow: 1
+    , slideswToScroll: 1
+    , arrows: false,
+    speed: 2500,
+    fade: true,
+cssEase: 'linear'
 
-	});
+});
 
-    	// Testimonnial slider
-	$(".testimonials").slick({
-	    dots: false
-	    , autoplay: true
-	    , infinite: true
-	    , dots: false
-	    , slidesToShow: 1
-	    , slideswToScroll: 1
-	    , arrows: true,
-      speed: 2500,
-      vertical:true,
+    // Testimonnial slider
+$(".testimonials").slick({
+    dots: false
+    , autoplay: true
+    , infinite: true
+    , dots: false
+    , slidesToShow: 1
+    , slideswToScroll: 1
+    , arrows: true,
+    speed: 2500,
+    vertical:true,
 
-      prevArrow:'<button class="arrow-left"><i class="fa fa-angle-left"></i></button>',
-      nextArrow:'<button class="arrow-right"><i class="fa fa-angle-right"></i></button>' 
-	});
+    prevArrow:'<button class="arrow-left"><i class="fa fa-angle-left"></i></button>',
+    nextArrow:'<button class="arrow-right"><i class="fa fa-angle-right"></i></button>' 
+});
 
-  var maxHeight = -1;
+var maxHeight = -1;
 $('.testimonials .slick-slide').each(function() {
-  if ($(this).height() > maxHeight) {
-    maxHeight = $(this).height();
-  }
+if ($(this).height() > maxHeight) {
+  maxHeight = $(this).height();
+}
 });
 $('.testimonials .slick-slide').each(function() {
-  if ($(this).height() < maxHeight) {
-    $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
-  }
+if ($(this).height() < maxHeight) {
+  $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
+}
 });
-  </script>
+</script>
 </body>
 
 </html>

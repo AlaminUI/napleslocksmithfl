@@ -13,13 +13,17 @@ body {
   font-style: normal;
   padding: 0;
   margin: 0;
+  color:#333;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
    
 }
 
-
+section{
+  overflow-x: hidden;
+}
 a,
 .button,
 button {
@@ -100,11 +104,7 @@ p {
   margin-bottom: 24px;
 }
 
-a {
-font-size: 16px;
-font-weight: 400;
-text-decoration: none;
-}
+a {font-size: 16px;font-weight: 400;text-decoration: none;color: #a8a8a8;}
 
 .container-fluid{
   width:100%;
@@ -186,8 +186,10 @@ ul.sub-menu {
   transition: .4s ease-out,opacity .1s ease-out;
   top: calc(100% - 6px - 0px)!important;
   left: 20px;
-  opacity: 0;
+  /* opacity: 0; */
   z-index: -10;
+  height: 0;
+  overflow: hidden;
 }
 
 li.submenu-item a i {
@@ -206,6 +208,8 @@ li.submenu-item:hover .sub-menu {
   opacity: 1;
   top: calc(100% - -4px - 0px)!important;
   z-index: 100;
+  height: auto;
+  overflow: visible;
 }
 
 nav.navagation-items ul.sub-menu li:last-child a {
@@ -275,7 +279,9 @@ header.sticky-header {
   padding: 12px 0px;
   z-index: 99999;
 }
-
+.humberger {
+  display: none;
+}
 header.sticky-header .contact-button ul li a {
   background: #fff;
   color: #000;
@@ -762,5 +768,176 @@ img.locationicon {
 img.phoneicon {
     max-width: 36px;
     margin-bottom: 8px;
+}
+
+
+/* service page  */
+.otherpage-banner {
+  height: 440px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 0 50% !important;
+}
+
+ 
+
+.otherpage-banner-content {
+  position: absolute;
+  left: 50%;
+  bottom: 78px;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+}
+
+.otherpage-banner-text h1 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.otherpage-banner-text img {
+  width: 100%;
+  max-width: 255px;
+  margin-bottom: 8px;
+}
+
+.otherpage-banner:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #000;
+  opacity: 0.5;
+}
+.row.reverse {
+  flex-direction: row-reverse;
+  gap: 16px;
+}
+
+.row.reverse .content-box {
+  margin-right: 0;
+}
+
+.row.reverse .content-image {
+  margin-left: 0;
+}
+
+.row.reverse .custom-btn {
+  background: #000;
+  color: #fff;
+}
+
+.row.reverse .custom-btn:hover {
+  color: #000;
+  background: transparent;
+  border-color: #000;
+}
+section.content-section1.servicepage-padding {
+  padding-top: 50px;
+}
+nav.navagation-items ul.sub-menu li a.active {
+  background: #666!important;
+  color: #fff !important;
+}
+
+/* testimonial  */
+.testimonials-icon img {
+  width: 100%;
+  max-width: 46px;
+}
+
+.single-testimonials {
+  background-color: rgba(255,255,255,1) !important;
+  box-shadow: rgb(0 0 0 / 25%) 0 3px 11px 0 !important;
+  -moz-box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+  -webkit-box-shadow: rgb(0 0 0 / 25%) 0 3px 11px 0 !important;
+  max-width: 510px;
+  padding: 20px;
+}
+
+.testimonials-footer p {
+  margin: 0 !important;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.testimonials-footer h6 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.testimonials-icon {
+  padding-top: 10px;
+}
+
+.single-testimonials p {
+  margin-bottom: 14px;
+}
+
+section.testimonials-section {
+  padding-top: 88px;
+  background: #f5f5f6;
+  padding-bottom: 50px;
+}
+.testimonials-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 32px;
+    justify-content: center;
+}
+
+/* .contact page  */
+.contact-row {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+section.map-area {
+  margin-top: 106px;
+}
+
+.contactus-wrap {
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+section.contact-us-section {
+  padding-top: 65px;
+}
+
+.contactus-wrap h2 {
+  font-size: 45px;
+  padding-bottom: 13px;
+}
+
+.contactus-wrap h3 {
+  color: #000;
+  padding-bottom: 17px;
+}
+
+.single-contact-info h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-left h3 {
+  font-size: 45px;
+  margin-bottom: 29px;
+}
+
+.open-hours {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+section.map-area iframe {
+  display: block;
 }
 /************** Template CSS End **************/
