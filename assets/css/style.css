@@ -1,4 +1,4 @@
-font-family: 'Poppins', sans-serif;*/
+/* font-family: 'Poppins', sans-serif; */
 
 /************** Default CSS **************/
 *{
@@ -18,7 +18,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
-   
 }
 
 section{
